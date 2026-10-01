@@ -42,3 +42,10 @@ Mobile application (iOS / Android).
 РђРІС‚РѕСЂ
 
 Р’РёС€РЅРµРІСЃСЊРєР° РќР°С‚Р°Р»С–СЏ
+## Технології
+
+- Mobile: iOS / Android
+- Backend: REST API
+- Database: PostgreSQL
+- Push-сповіщення: FCM / APNs
+- Інтеграція: POS-система кав'ярні
