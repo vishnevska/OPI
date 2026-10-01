@@ -1,0 +1,16 @@
+# Тимчасові файли ОС
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# .NET / ASP.NET Core
+bin/
+obj/
+*.user
+
+# Локальні секрети та налаштування
+.env
+appsettings.Development.json
