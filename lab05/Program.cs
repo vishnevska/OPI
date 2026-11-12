@@ -6,9 +6,14 @@ class Student
 {
     public string Surname { get; set; }
     public string Group { get; set; }
+<<<<<<< HEAD
     public double Grade { get; set; } // середній бал
     public int Year { get; set; }     // рік вступу
 
+=======
+    public double Grade { get; set; } 
+    public int Year { get; set; }     
+>>>>>>> a725295 (Done lab05)
     public Student(string surname, string group, double grade, int year)
     {
         Surname = surname;
@@ -35,16 +40,27 @@ class Program
         };
 
         var sortedByName = students.OrderBy(s => s.Surname).ToList();
+<<<<<<< HEAD
         PrintAll("-1. За прізвищем, за абеткою", sortedByName);
 
         var sortedByGrade = students.OrderByDescending(s => s.Grade).ToList();
         PrintAll("-2. За балом (від вищого до нижчого)", sortedByGrade);
+=======
+        PrintAll("- 1. За прізвищем, за абеткою", sortedByName);
+
+        var sortedByGrade = students.OrderByDescending(s => s.Grade).ToList();
+        PrintAll("- 2. За балом (від вищого до нижчого)", sortedByGrade);
+>>>>>>> a725295 (Done lab05)
 
         var sortedByGroupAndGrade = students
             .OrderBy(s => s.Group)
             .ThenByDescending(s => s.Grade)
             .ToList();
+<<<<<<< HEAD
         PrintAll("-3. За групою (головний), а всередині — за балом від вищого", sortedByGroupAndGrade);
+=======
+        PrintAll("- 3. За групою (головний), а всередині — за балом від вищого", sortedByGroupAndGrade);
+>>>>>>> a725295 (Done lab05)
 
         var sortedByGradeThenName = students
             .OrderByDescending(s => s.Grade)
